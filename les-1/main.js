@@ -131,13 +131,31 @@ const askName = function() {
 // console.log(NaN === NaN);
 
 const sumNumbers = function() {
-    const numberOne = parseInt(prompt('Give us a number please?'));
-    const numberTwo = parseInt(prompt('Give us another number please?'));
+    // let isNotANumber = true;
+
+    // while (isNotANumber) {
+    //     const numberOne = parseInt(prompt('Give us a number please?'));
+    //     const numberTwo = parseInt(prompt('Give us another number please?'));
+
+    //     if(isNaN(numberOne) || isNaN(numberTwo)) {
+    //         alert('Insert Number');
+    //     } else {
+    //         isNotANumber = false;
+    //     }
+    // } 
+    
+    let numberOne = parseInt(prompt('Give us a number please?'));
+    while (isNaN(numberOne)) {
+        numberOne = parseInt(prompt('Insert a valid number: \n Give us a number please?'));
+    } 
+
+    let numberTwo = parseInt(prompt('Give us another number please?'));
+    while (isNaN(numberTwo)) {
+        numberTwo = parseInt(prompt('Insert a valid number: \n Give us another number please?'));
+    } 
 
     alert(numberOne + numberTwo);
 }
 
 sumNumbers();
 
-
-// askName();
