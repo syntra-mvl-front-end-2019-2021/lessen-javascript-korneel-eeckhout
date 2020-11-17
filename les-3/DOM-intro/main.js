@@ -17,8 +17,6 @@
 //
 // const pTag = document.body.childNodes[1];
 //
-// console.log(pTag.nextSibling);
-
 console.log(document.getElementById('select-me-3'));
 console.log(document.getElementsByClassName('select-me-too-2'));
 console.log(document.getElementsByTagName('p'));
