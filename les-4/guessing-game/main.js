@@ -128,7 +128,7 @@ function submitGuess() {
       printGuess(guess);
 
       if (guess === solution) {
-        printMessage('You won');
+        printMessage('You won, restart?');
         showSolution();
         setGameDone(true);
       } else if (guessCount === 5) {
@@ -143,4 +143,4 @@ function submitGuess() {
 }
 
 initGuessingGame();
-$guessSubmit.addEventListener('click', submitGuess)
+$guessSubmit.addEventListener('click', submitGuess);
