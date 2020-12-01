@@ -1,1 +1,8 @@
 /*style*/
+#restart-btn-container {
+  padding-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
