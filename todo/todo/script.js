@@ -164,3 +164,8 @@ $saveBtn.addEventListener('click', saveBtnClick);
 $clearBtn.addEventListener('click', clearAllBtnClick);
 $todoList.addEventListener('click', todoListClick);
 $doneList.addEventListener('click', doneListClick);
+
+$test.addEventListener(function () {});
+$test.addEventListener(() => {});
+
+const testFunction = () => {};
