@@ -7,7 +7,11 @@
 // input: [1,2,3]
 // expected output: [2,4,6]
 
-function doubleNumbers(arr) {}
+function doubleNumbers(arr) {
+    return arr.map(function (val) {
+        return val * 2;
+    });
+}
 
 // Take an array of numbers and make them strings
 // Example:
